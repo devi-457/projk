@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta name="viewport"  content="width=device-width initial scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+       <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h2>Billing address</h2>
+                <div class="input-type-group"  style="justify-content: space-between ;">
+                    First name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name
+                    <br>
+                    <div class="row"  style="justify-content:space-between" >
+                    <input type="text"  class="form-control" style="width:290px">
+                    <input type="text"  class="form-control" style="width:290px">
+                    </div>
+                 </div>
+                 <br>User name    
+                    <div class="input-group" >
+                     <input  type="button" value="@" class="btn btn-secondary">
+                     <input type="text"  class="form-control" >
+                    </div>
+                    <br> Email(optiona)<br>
+                     <input type="text" class="form-control" placeholder="You@Example.com">
+                     <br>
+                     Address<br>
+                     <input type="text" class="form-control"  placeholder="1234 Main st">
+                     <br>
+                     Address 2(Optional)
+                     <br><input type="text" class="form-control" placeholder="Appartment  or  suite">
+                     <br><br>
+                     <div class="input-type-group"></div>
+                     Country
+                     <select name="Country"  id="country">
+                      <option > Choose...</option>
+                      <option value ="India" > India</option>
+                      <option value="America"> America</option>
+                      <option value = "Australia">Australia</option>
+                      <option value="Paris" > Paris</option>
+                      <option value = "Bangladesh"> Bangladesh</option>
+                      <option value = "Africa">Africa</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        State
+                   <select name="State" id="state">
+                      <option > Choose...</option>
+                      <option value ="Kerala" > Kerala</option>
+                      <option value="bangalure"> Bangaloore</option>
+                      <option value = "Chennai">Chennai</option>
+                      <option value="Hyderabad" >Hyderabad</option>
+                      <option value = "Mysore"> Mysore</option>
+                      <option value = "Punjab">Punjab</option>
+                    </select>
+                    &nbsp;&nbsp;
+                     Zip
+                    <input type="text"   width="15em"  ><br><br>
+                     <br><input type = "checkbox"  name="shipping"  id="shipp" value="shipp"> Shipping address is the same as the my biling address
+                    <br><input type = "checkbox"   name="Save"  id="Save" value="save">     Save this information for next time
+                    <hr>
+                    Payment
+                    <br><input type = "radio" name="pay"  id="cpay" value="cpay"> Credit card 
+                    <br><input type = "radio" name="pay"  id="pay"  value="pay">  Debit card 
+                    <br><input type = "radio" name="pay"  id="ppay" value="ppay"> Paypal
+                    <br>
+                    <div class="input-type-group" style="justify-content:space-between  width=50px">
+                    Name on card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit card number
+                    <br>
+                    <div class="row" style="justify-content: space-between">
+                      <input type="text"  class="form-control" style="width:290px">
+                      <input type="text"  class="form-control" style="width:290px">
+                      <br><div class ="text-muted">Full name as displayed on card</div>
+                    </div>
+                    </div>
+                    <br><div class="input-type-group"  style="justify-content:space-between">
+                        Expiration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        CVV
+                        <br>
+                        <div class="row" style="justify-content:space-between;">
+                          <input type="text"  class="form-control" style="width:290px">
+                          <input type="text"  class="form-control" style="width:290px">
+                        </div>
+                         <hr>
+                         <input type="button"  value="Continue to checkout" style="width:600px ;" class="btn btn-primary"> <br>
+                  </div>
+            </div>
+            <div class="col-4">
+                <h3>Your cart &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge rounded-pill text-bg-secondary" style="width: 40px;">3</span></h3>
+                          <ul class="list-group" style="margin:7px">
+                            <li class="list-group-item">
+                                 <b>Product name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$12</b><br>
+                                   Brief description
+                           </li>
+                          <li class="list-group-item">
+                            <b>Second product&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$8</b>
+                            <br>Brief description    
+                          </li>
+                          <li class="list-group-item">
+                          <b>Third item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$5</b><br>
+                           Brief description
+                          </li>
+                          <li class="list-group-item" style="color:green">
+                          <b>Promo code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-$5</b><br>
+                          EXAMPLECODE
+                           </li>
+                          <li class="list-group-item">
+                         <b>Total(USD)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20</b><br>
+                           Brief description
+                         </li>
+                         </ul>
+                         <br> 
+                  <div class="form-control">
+                    <div class="input-group" style="border:30px">
+                      <input type="text" class="form-control" style="width:10px" value="Promo code" >
+                     <input  type="button" value="Redeem" class="btn btn-secondary">
+                   </div>
+                 </div>
+            </div> 
+        </div>
+       </div> 
+    </body>
+</html>
